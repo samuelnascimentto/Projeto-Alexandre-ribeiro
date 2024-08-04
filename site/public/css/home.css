@@ -1,0 +1,26 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #212121;
+}
+
+.imagem_fundo {
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 90%;
+    border-radius: 13px;
+    margin-bottom: 40px;
+
+    background-image: url(../img/ale_home.jpg.png);
+    background-repeat: no-repeat;  
+    background-size: contain;
+} /* imagem de fundo */
+
+
+
