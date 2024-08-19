@@ -10,7 +10,6 @@
 .navbar {   
     position: fixed;
     background-color: #222222;
-    color: #8c8c8c ;
     padding: 1rem;
     width: 100%;
     height: 12%;
@@ -27,7 +26,6 @@
     position: absolute;
     height: 74px;
     width: 74px;
-    
 }
 
 .navbar li {
@@ -35,14 +33,30 @@
     display: inline-block;
     margin: 5px 15px;
     font-size: 1.7rem;
+    position: relative;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #bebebe;
+    color: #bdbebd;
 }
-.navbar a:hover {
-    color: #686767;
+
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #bdbebd;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 /* Acaba navegacao */
 
@@ -56,7 +70,7 @@
 .imagem-fundo {
     margin: 100px 60px;
     position: relative;
-    color: #bebebe;
+    color: #bdbebd;
     font-size: 170px;
 
 }
@@ -129,7 +143,7 @@
 .bio-texto1 {
     display: flex;
     flex-direction: row-reverse;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 20px 20px 20px;
 }
 
 .bio-texto1 span {
@@ -137,28 +151,19 @@
 } /* SEGUNDO BLOCO DE TEXTO */
 
 .bio-texto2 img{
-    height: 450px;
-    width: 808px;
+    height: 460px;
+    width: 62%;
 }
 
 .bio-texto2 {
     display: flex;
-    margin: 25px 20px 20px 20px;
-}
-
-.bio-texto2 img{
-    height: 10%;
-    width: 53%;
+    margin: 20px 20px 20px 20px;
 }
 
 .bio-texto2 span {
-    margin-top: 17px;
+    margin-top: 0px;
     padding-left: 20px;
 } /* TERCEIRO BLOCO DE TEXTO */
-
-
-
-
 
 #contato {
     padding: 0;
@@ -224,7 +229,7 @@ button {
     width: 100%;
     padding: 10px;
     background-color:#222222;
-    color: #f1f1f1;
+    color: #bdbebd;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -249,7 +254,7 @@ button:hover {
 
 .info-section ul li {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 100;
 }
 
@@ -276,4 +281,19 @@ button:hover {
 .info-section ul li a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.info-section span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-section p {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: none;
+}
+
+.info-section a {
+    text-decoration: none;
 }
