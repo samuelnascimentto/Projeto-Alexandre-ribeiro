@@ -297,7 +297,7 @@ button:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 7px;
     padding: 100px;
     background-color: #f1f1f1;
 }
@@ -311,7 +311,8 @@ button:hover {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    
+    height: 300px;
+    width: 300px;
 }
 
 .photo img {
@@ -319,7 +320,6 @@ button:hover {
     height: 100%;
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
 }
 
 .photo:hover img {
