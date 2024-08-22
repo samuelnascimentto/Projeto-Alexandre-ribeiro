@@ -63,7 +63,7 @@
 #container {
     display: flex;
     background-color: #303030;
-    height: 1000px;
+    height: 680px;
     width: 100%;
 }
 
@@ -72,7 +72,6 @@
     position: relative;
     color: #bdbebd;
     font-size: 170px;
-
 }
 
 .imagem-fundo span {

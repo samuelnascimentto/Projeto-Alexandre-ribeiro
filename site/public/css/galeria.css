@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     gap: 7px;
     background-color: #f1f1f1;
-    padding-bottom: 30px;
+    padding: 140px;
+    padding-bottom: 60px;
 }
 
 .photo {

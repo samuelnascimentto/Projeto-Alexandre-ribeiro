@@ -1,3 +1,4 @@
+
 #contato {
     padding: 0;
     margin: 0;
@@ -9,13 +10,13 @@
     justify-content: space-between;
     width: 85%;
     max-width: 1200px;
-    padding: 50px;
+    margin: 0 auto;
 }
 
 .form-section, .info-section {
-    margin-bottom: 0; 
+    margin: 60px 0px;
     width: 46%;
-    padding: 20px ;
+    padding: 40px ;
     background-color: #f1f1f1;
     border-radius: 8px;
 }
@@ -32,7 +33,7 @@ h1 {
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -60,6 +61,7 @@ textarea::placeholder {
 
 button {
     width: 100%;
+    padding: 10px;
     background-color:#222222;
     color: #bdbebd;
     border: none;
@@ -67,8 +69,65 @@ button {
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 button:hover {
     background-color: #303030;
+}
+
+/* FIM DO DIV CONTATO  */
+.info-section h1 {
+    color: #333;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding: 50px 0;
+}
+
+.info-section ul li {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.info-section ul li a {
+    text-decoration: none;
+    color: #303030;
+    position: relative;
+    display: inline-block;
+}
+
+.info-section ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #303030;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.info-section ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.info-section span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-section p {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: none;
+}
+
+.info-section a {
+    text-decoration: none;
 }
