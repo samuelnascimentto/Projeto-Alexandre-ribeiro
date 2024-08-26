@@ -98,7 +98,43 @@
     position: absolute;
     margin-top: 100px;
     z-index: 1;
+}/* FIM DA IMAGEM DE FUNDO */
+
+
+.destaques h1 {
+    display: block;
+    background-color: #f1f1f1;    
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    color: #303030;
 }
+
+.gallery {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 10px 40px ;
+}
+
+.photo {
+    flex: 20%;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-color: red;
+}
+
+.photo img {
+    width: auto;
+    height: auto;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+
 
 /* Estilos do Footer */
 .footer{
