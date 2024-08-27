@@ -63,12 +63,12 @@
 #container {
     display: flex;
     background-color: #303030;
-    height: 680px;
+    height: 660px;
     width: 100%;
 }
 
 .imagem-fundo {
-    margin: 100px 60px;
+    margin: 80px 60px 100px;
     position: relative;
     color: #bdbebd;
     font-size: 170px;
@@ -113,28 +113,15 @@
 .gallery {
     background-color: #f1f1f1;
     display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    padding: 10px 40px ;
-}
-
-.photo {
-    flex: 20%;
-    box-sizing: border-box;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    background-color: red;
+    justify-content: space-around;
+    padding: 30px 40px;
 }
 
 .photo img {
-    width: auto;
-    height: auto;
-    display: block;
+    cursor: pointer;
     height: 300px;
     width: 300px;
 }
-
 
 /* Estilos do Footer */
 .footer{
